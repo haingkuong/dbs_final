@@ -125,13 +125,15 @@ System Requirements
                 a. Each Architecture must be associated with exactly one creator User.
                 
         7. Results
-            7.1 Target
+            7.1 Result ID
+                a. Each Result must have exactly one Result ID.
+            7.2 Target
                 a. Each Result must be associated with exactly one Target.
-            7.2 Exploits
+            7.3 Exploits
                 a. Each Result may be associated with one or more Exploits.
-            7.3 Date Created
+            7.4 Date Created
                 a. Each Result must be associated with exactly one Date Created.
-            7.4 User
+            7.5 User
                 a. Each Result must be associated with exactly one creator User.
             
         8. Ratings
