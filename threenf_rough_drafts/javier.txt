@@ -1,0 +1,175 @@
+Vulnerability and Exploits
+1NF
+Vul cve, vul name, vul desc, vul severity, vul date_created, vul date_modified, explioid_id, exploit_code, exploit_date_created, exploitd_date_modified
+
+2NF
+Vulnerabilities
+cve, name, desc, severity, date_created, date_modified, exploit_id
+
+Exploit
+exploit_id, exploit_code, date_created, date_modified
+
+3NF
+Vulnerabilities
+cve, name, desc, severity, date_created, date_modified
+
+Vulnerabilies to Exploits
+cve, exploit_id
+
+Exploits
+exploits_id, exploit_code, date_created, date_modified
+
+Exploits to applications
+1NF
+exploit_id, exploit_code, exploit_date_created, exploit_date_modified, application_name, application_date_created, application_date_modified, application_min_affected_version, application_max_affected_version
+
+2NF
+Exploits
+exploit_id, exploit_code, date_created, date_modified, application_name, application_min_affected_version, application_max_affected_version
+
+Applications
+name, date_created, date_modified
+
+3NF
+Exploits
+exploit_id, exploit_code, date_created, date_modified
+
+Exploits to Applications
+exploit_id, application_name, application_min_affected_version, applicaiton_max_affected_version
+
+Application
+name, date_created, date_modified
+
+Exploit to OS
+1NF
+exploit_id, exploit_code, exploit_date_created, exploit_date_modified, os_name,
+os_date_created, os_date_modified, os_min_affected_version, os_max_affected_version
+
+2NF
+Exploits
+exploit_id, exploit_code, exploit_date_created, exploit_date_modified, os_name, os_min_affected_version, os_max_affected_version
+
+OS
+os_name, os_date_created, os_date_modified
+
+3NF
+Exploits
+exploit_id, exploit_code, exploit_date_created, exploit_date_modified
+
+OS
+os_name, os_date_created, os_date_modified
+
+Exploits to OS
+exploit_id, os_name, os_min_affected_version, os_max_affected_version
+
+Exploit to Architecture
+1NF
+exploit_id, exploit_code, exploit_date_created, exploit_date_modified, architecture_name, architecture_date_created, architecture_date_modified
+
+2NF
+Exploits
+exploit_id, exploit_code, exploit_date_created, exploit_date_modified, architecture_name
+
+Architecture
+name, date_created, date_modified
+
+3NF
+Exploits
+exploit_id, exploit_code, exploit_date_created, exploit_date_modified
+
+Architecture
+name, date_created, date_modified
+
+Exploits to Architecture
+exploit_id, architecture_name
+
+Target to App
+1NF
+target_name, target_date_created, target_date_modified, application_name, application_date_created, applicaiton_date_modified, applcaiton_version
+
+2NF
+Target
+name, date_created, date_modified, application_name, applicaiton_version
+
+Application
+name, date_created, date_modified
+
+3NF
+Target
+name, date_created, date_modified
+
+Application
+name, date_created, date_modified
+
+Target to application
+target_name, application_name, application_version
+
+Target to os
+1NF
+target_name, target_date_created, target_date_modified, os_name, os_date_created, os_date_modified, os_version
+
+2NF
+Target
+name, date_created, date_modified, os_name, os_version
+
+OS
+name, date_created, date_modified
+
+3NF
+Target
+name, date_created, date_modified
+
+OS
+name, date_created, date_modified
+
+Target to OS
+target_name, os_name, os_version
+
+Target to arch
+1NF
+target_name, target_date_created, target_date_modified, arch_name, arch_date_created, arch_date_modified
+
+2NF
+Target
+name, date_created, date_modified, arch_name
+
+Arch
+name, date_created, date_modified
+
+3NF
+Target
+name, date_created, date_modified
+
+Arch
+name, date_created, date_modified
+
+Target to Arch
+target_name, arch_name
+
+Target to result to Exploit
+1NF
+target_name, target_date_created, target_date_modified, exploit_id, exploit_code,
+exploit_date_modified, exploit_date_created, result_created
+
+2NF
+Target
+name, date_created, date_modified, exploit_id, result_created
+
+Result
+date_created
+
+Exploit
+id, code, date_modified, date_created
+
+3NF
+Target
+name, date_created, date_modified
+
+Result
+date_created
+
+Exploit
+id, code, date_modified, date_created
+
+Target to Result to Exploit
+target_name, exploit_id, result_date_created
