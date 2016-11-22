@@ -159,9 +159,11 @@ System Requirements
             9.2 Posts
                 9.2.1 Title
                     a. Each Post must be associated with exactly one Title
-                9.2.2 User
+                9.2.2 Text
+                    a. Each post must have exactly one Text attribute.
+                9.2.3 User
                     a. Each Post must be associated with exactly one Title.
-                9.2.3 Date Created
+                9.2.4 Date Created
                     a. Each Post must be associated with exactly one Date Created.
-                9.2.4 Date Last Modified
+                9.2.5 Date Last Modified
                     a. Each Post must be associated with exactly one Date Last Modified.
